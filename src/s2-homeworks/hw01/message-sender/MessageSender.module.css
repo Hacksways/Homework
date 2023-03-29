@@ -1,0 +1,31 @@
+.sendForm {
+    display: flex; 
+}
+
+.textarea {
+    width: 50%;
+    padding: 20px;
+    margin-left: 25%;
+    border-radius: 30px;
+    background-color: #F5F7FB;
+}
+
+.button {
+    align-self: center;
+    width: 6.5%;
+    height: 40px;
+    font-family: 'Montserrat';
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    border-radius: 20px;
+    background-color: #0066CC;
+    color: white;
+}
+
+.button:hover {
+    background-color: #053d6b;
+}
+.button:active {
+    background-color: black;
+}
