@@ -1,8 +1,10 @@
-.input:focus {
-}
+.input:focus {}
 
 .input {
-
+    height: 36px;
+    width: 372px;
+    border: 1px solid #D1D1D1;
+    border-radius: 5px;
 }
 
 .inputWrapper {
@@ -22,9 +24,7 @@
     border-radius: 3px;
 }
 
-.errorInput:focus {
-
-}
+.errorInput:focus {}
 
 .error {
     font-family: 'Montserrat', sans-serif;
