@@ -1,13 +1,15 @@
 .sendForm {
     display: flex; 
+    justify-content: center;
 }
 
 .textarea {
     width: 50%;
     padding: 20px;
-    margin-left: 25%;
     border-radius: 30px;
     background-color: #F5F7FB;
+    overflow: hidden;
+    margin-right: 40px;
 }
 
 .button {
