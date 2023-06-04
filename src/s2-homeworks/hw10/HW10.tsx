@@ -13,14 +13,19 @@ import {Loader} from './Loader'
 * 4 - сделать стили в соответствии с дизайном
 * */
 
+
 const HW10 = () => {
     // useSelector, useDispatch // пишет студент
-    const isLoading = false
+    const isLoading = useSelector<AppStoreType, { isLoading: boolean } >(state=> state.loading)
+
+    const dispatch = useDispatch()
+
 
     const setLoading = () => { // пишет студент // показать крутилку на 1,5 секунд
         // dispatch
-
+        dispatch(loadingAC(true))
         // setTimeout
+        setTimeout(()=>dispatch(loadingAC(false)),1500 )
     }
 
     return (
@@ -28,7 +33,7 @@ const HW10 = () => {
             <div className={s2.hwTitle}>Homework #10</div>
 
             <div className={s2.hw}>
-                {isLoading ? (
+                {isLoading.isLoading ? (
                     <div id={'hw10-loading'}>
                         <Loader/>
                     </div>
